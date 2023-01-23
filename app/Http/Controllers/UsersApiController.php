@@ -127,7 +127,8 @@ class UsersApiController extends Controller
 */
     public  function getAlumnos($matricula)
     {
-        $resultado = array();
+        #methodo para de consulta
+        $resultado = array(); 
         header('Content-Type: application/json');
         $endpoint = "http://campusvirtual.cesba-queretaro.edu.mx/webservice/rest/server.php?wstoken=817c06ac6196681f2d8f7db8dc6401ab&moodlewsrestformat=json&wsfunction=core_user_get_users&criteria[0][key]=username&criteria[0][value]=".$matricula;
         $ch = curl_init();
