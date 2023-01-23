@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('consultaUsers/{matricula}','UsersApiController@getAlumnos'); {   
 }
 
-Route::post('creaAlumnos','UsersApiController@CrearAlumnos');{   
+Route::post('creaUsuarios','UsersApiController@CrearAlumnos');{   
 }
 
 Route::put('updateUsers/{matricula}','UsersApiController@UpdateUsers'); {   
@@ -36,7 +36,7 @@ Route::post('creaCuatrimestres','PlanEstudiosApiController@CreaCuatrimestres');{
 Route::post('creaMaterias','PlanEstudiosApiController@CreaMaterias');{   
 }
 
-Route::get('consultaMateria/{calificacionMateria}','PlanEstudiosApiController@ConsultaMateria');{   
+Route::get('consultaMateria/{ConsultaMaterias}','PlanEstudiosApiController@ConsultaMateria');{   
 }
 
 Route::get('calificacionMateria/{calificacionMateria}','PlanEstudiosApiController@CalificacionMateria');{   
